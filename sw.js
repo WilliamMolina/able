@@ -13,13 +13,13 @@ self.addEventListener('install', function(event) {
       caches.open('main').then(function(cache) {
         return cache.addAll(
           [
-            '/manifest.json',
-            '/index.html',
+            'manifest.json',
+            'index.html',
             '/',
-            '/core/libs/navigo.min.js',
-            '/dist/core.js',
-            '/AppImages/android/android-launchericon-144-144.png',
-            '/loading.gif'
+            'core/libs/navigo.min.js',
+            'dist/core.js',
+            'AppImages/android/android-launchericon-144-144.png',
+            'loading.gif'
           ]
         );
       })
