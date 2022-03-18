@@ -17,6 +17,7 @@ self.addEventListener('install', function(event) {
             '/uaral/',
             '/uaral/core/libs/navigo.min.js',
             '/uaral/dist/core.js',
+            '/uaral/dist/server.apk',
             '/uaral/AppImages/android/android-launchericon-144-144.png',
             '/uaral/loading.gif'
           ]
