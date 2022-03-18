@@ -41,7 +41,7 @@ self.addEventListener('install', function(event) {
 
   function networkFirst(event){
     event.respondWith(
-      fetch(event.request, {mode: 'no-cors'}).then(function(response){
+      fetch(event.request, {mode: 'cors'}).then(function(response){
         return caches.open('main').then(function(cache){
           if(event.request.url.includes('ngrok')){
             let cached = '/'+event.request.url.split('/').slice(3).join('/');
